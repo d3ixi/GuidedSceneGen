@@ -90,11 +90,11 @@
 
           <h2 class="title is-5 publication-title">ECCV 2026</h2>
           <div class="is-size-5 publication-authors">
-              <span class="author-block"><a href="https://scholar.google.com/citations?user=VWNkvIwAAAAJ&hl=en">Stefan Ainetter</a><sup>2</sup></span>,
-              <span class="author-block"><a href="https://scholar.google.com/citations?user=q3KITmQAAAAJ">Thomas Deixelberger</a><sup>2,3</sup></span>,
-              <span class="author-block"><a href="https://dedoardo.github.io">Edoardo A. Dominici</a><sup>1</sup></span>,
-              <span class="author-block"><a href="https://scholar.google.com/citations?user=Zh6I0IAAAAAJ&hl=de&oi=ao">Philipp Drescher</a><sup>2,3</sup></span>,
-              <span class="author-block"><a href="https://kostasvardis.com/">Konstantinos Vardis</a><sup>1</sup></span>and
+              <span class="author-block"><a href="https://scholar.google.com/citations?user=VWNkvIwAAAAJ&hl=en">Stefan Ainetter</a><sup>2</sup></span>
+              <span class="author-block"><a href="https://scholar.google.com/citations?user=q3KITmQAAAAJ">Thomas Deixelberger</a><sup>2,3</sup></span>
+              <span class="author-block"><a href="https://dedoardo.github.io">Edoardo A. Dominici</a><sup>1</sup></span>
+              <span class="author-block"><a href="https://scholar.google.com/citations?user=Zh6I0IAAAAAJ&hl=de&oi=ao">Philipp Drescher</a><sup>2,3</sup></span>
+              <span class="author-block"><a href="https://kostasvardis.com/">Konstantinos Vardis</a><sup>1</sup></span>
               <span class="author-block"><a href="https://www.markussteinberger.net/">Markus Steinberger</a><sup>2,3</sup></span>
           </div>
 
@@ -181,6 +181,68 @@
     </div>
     <!--/ Paper video. -->
   </div>
+
+
+
+
+ </section>
+
+<section class="section">
+
+      <div class="columns is-centered has-text-centered">
+      <div class="column is-half">
+        <h2 class="title is-3">Scene Expansion</h2>
+
+                         <div class="hero-body">
+      <img id="Expansion" src="./static/images/scene_expansion.png" alt="Expansion image"     style="width: 1000px;">
+    </div>
+                    <div class="content has-text-justified">
+
+          <p>
+After a first scene is generated, our frame work
+enables seamless iterative scene expansion. First, the previous 3D proxy as well as a
+textual description of the new scene is given as input to <a href="https://yueyang1996.github.io/holodeck/">Holodeck</a>. This enables
+us to extend the 3D proxy in the global world coordinate frame. Then, each room
+can be generated independently, whereas the generated results will automatically align
+due to the 3D proxy guidance. To seamlessly connect the rooms, we can remove the
+gaussians of the connector component by utilizing the corresponding semantic and pose
+information. Note that our scene expansion application is iterative and single scenes
+can be generated independently, hence large scenes generation with multiple rooms can
+be achieved without increasing memory or computation demands.
+          </p>
+        </div>
+
+
+
+      </div>
+    </div>
+
+</section>
+
+
+<section class="section">
+
+      <div class="columns is-centered has-text-centered">
+      <div class="column is-half">
+        <h2 class="title is-3">Annotation</h2>
+         <div class="hero-body">
+      <img id="Expansion" src="./static/images/annotation.png" alt="Annotation image"     style="width: 1000px;">
+    </div>
+                <div class="content has-text-justified">
+          <p>
+9D object poses and 2D semantic masks
+transferred from the 3D proxy align well with novel views of the final 3DGS scene
+and enable reliable 3D Gaussian segmentation via clustering. Compared to predictions
+of <a href="https://github.com/NVlabs/SegFormer">SegFormer</a>, a specialist model trained for 2D indoor scene segmentation, our
+transferred annotations are more precise.
+          </p>
+        </div>
+
+
+
+      </div>
+    </div>
+
 </section>
 
 
