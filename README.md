@@ -1,20 +1,19 @@
-# Scene Generation at Absolute Scale
-Official implementation of *GuidedSceneGen*
+<h1 align="center">Scene Generation at Absolute Scale: Utilizing Semantic and Geometric Guidance From Text for Accurate and Interpretable 3D Indoor Scene Generation</h1>
 
-Utilizing Semantic and Geometric Guidance From Text for Accurate and Interpretable 3D Indoor Scene Generation
+<p align="center">
+  <img src="./teaser.png" alt="Teaser">
+</p>
 
-[[arXiv](https://arxiv.org/abs/2603.13910)] [[Project Page](https://d3ixi.github.io/GuidedSceneGen/)]
+<p align="center">
+  [<a href="https://arxiv.org/abs/2603.13910">arXiv</a>] [<a href="https://d3ixi.github.io/GuidedSceneGen/">Project Page</a>]
+</p>
 
-![Teaser](./teaser.png)
-
+If you find this project useful, please consider citing our paper:
 ```
-@misc{ainetter2026scenegenerationabsolutescale,
-      title={Scene Generation at Absolute Scale: Utilizing Semantic and Geometric Guidance From Text for Accurate and Interpretable 3D Indoor Scene Generation}, 
-      author={Stefan Ainetter and Thomas Deixelberger and Edoardo A. Dominici and Philipp Drescher and Konstantinos Vardis and Markus Steinberger},
-      year={2026},
-      eprint={2603.13910},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2603.13910}, 
+@article{ainetter2026scene,
+  title={Scene Generation at Absolute Scale: Utilizing Semantic and Geometric Guidance From Text for Accurate and Interpretable 3D Indoor Scene Generation},
+  author={Ainetter, Stefan and Deixelberger, Thomas and Dominici, Edoardo A and Drescher, Philipp and Vardis, Konstantinos and Steinberger, Markus},
+  journal={arXiv preprint arXiv:2603.13910},
+  year={2026}
 }
 ```
