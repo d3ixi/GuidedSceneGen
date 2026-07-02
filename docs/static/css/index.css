@@ -2,6 +2,14 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
+/* Narrower content column on desktop; full width on mobile/tablet (<= 768px) */
+@media screen and (min-width: 769px) {
+  .narrow-column {
+    flex: none;
+    width: 43%;
+  }
+}
+
 
 .footer .icon-link {
     font-size: 25px;
